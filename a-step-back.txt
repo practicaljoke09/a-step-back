@@ -1,0 +1,135 @@
+void setup() 
+{
+
+	size(480, 480);
+
+}
+
+int X;
+int Y;
+
+float red=255;
+float green;
+float blue;
+
+void draw()
+{
+	for (int i= 0; i <= 48 ; ++ i) {
+			
+		X = 0 + 20 * i;
+		Y = 0 + 20 * i;
+
+		if (i<=4){
+
+			stroke(red, green, blue);
+			
+			line(0, Y+240, X, height);
+		} else if (i<=8) {
+
+			green=127;
+
+			stroke(red, green, blue);
+			
+			line(0, Y+240, X, height);
+
+		} else if (i<=12) {
+
+			green=255;
+
+			stroke(red, green, blue);
+			
+			line(0, Y+240, X, height);
+
+		} else if (i<=16) {
+
+			red=127;
+			green=255;
+
+			stroke(red, green, blue);
+			
+			line(X, height, width, (height-Y+240));
+
+		} else if (i<=20) {
+
+			red=0;
+			green=255;
+
+			stroke(red, green, blue);
+			
+			line(X, height, width, (height-Y+240));
+			
+		} else if (i<=24) {
+
+			red=0;
+			green=255;
+			blue=127;
+
+			stroke(red, green, blue);
+			
+			line(X, height, width, (height-Y+240));
+			
+		} else if (i<=28) {
+
+			red=0;
+			green=255;
+			blue=255;
+
+			stroke(red, green, blue);
+			
+			line(width, (height-Y+240), (width-X+480), 0);
+			
+		} else if (i<=32) {
+
+			red=0;
+			green=127;
+			blue=255;
+
+			stroke(red, green, blue);
+			
+			line(width, (height-Y+240), (width-X+480), 0);
+			
+		} else if (i<=36) {
+
+			red=0;
+			green=0;
+			blue=255;
+
+			stroke(red, green, blue);
+			
+			line(width, (height-Y+240), (width-X+480), 0);
+			
+		} else if (i<=40) {
+
+			red=127;
+			green=0;
+			blue=255;
+
+			stroke(red, green, blue);
+			
+			line((width-X+480), 0, 0, Y-720);
+			
+		} else if (i<=44) {
+
+			red=225;
+			green=0;
+			blue=255;
+
+			stroke(red, green, blue);
+			
+			line((width-X+480), 0, 0, Y-720);
+			
+		} else if (i<=48) {
+
+			red=255;
+			green=0;
+			blue=127;
+
+			stroke(red, green, blue);
+			
+			line((width-X+480), 0, 0, Y-720);
+			
+		}
+
+
+	}
+}
